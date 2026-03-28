@@ -13,7 +13,7 @@
         }
       }
     },
-    "title": "Jodeks Datapacks                                                                       ",
+    "title": "Jodeks Datapacks                       ",
     "description": [
       {
         "text": "Creator of vanilla friendly datapacks\n",
@@ -31,11 +31,28 @@
     "background": "minecraft:block/flowering_azalea_leaves",
     "frame": "challenge",
     "show_toast": false,
-    "announce_to_chat": false
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "tick": {
-      "trigger": "minecraft:tick"
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "&name_tag_advancements"
+              },
+              "score": "jodek.config"
+            },
+            "range": 1
+          }
+        ]
+      }
     }
   }
 }

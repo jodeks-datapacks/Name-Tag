@@ -1,6 +1,6 @@
 {
   "values": [
-    "nametag:app/setup",
-    "nametag:app/load_message"
+    "name_tag:app/setup",
+    "name_tag:app/load_message"
   ]
 }

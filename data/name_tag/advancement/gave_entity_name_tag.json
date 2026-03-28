@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "gave_player_name_tag": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:name_tag"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "name_tag:app/tag_entity"
+  }
+}
